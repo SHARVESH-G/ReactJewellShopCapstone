@@ -59,7 +59,7 @@ const SearchPage = () => {
 
   return (
     <div className="container">
-      <h2 className="title">💎 Jewelry Finder</h2>
+      <h2 className="title">Luxury Jewelry Finder</h2>
       <p className="subtitle">Search jewelry by text or image</p>
 
       {/* TEXT SEARCH */}

@@ -25,8 +25,9 @@ const AdminPage = () => {
 
   return (
     <div className="container">
-      <h2>📦 Admin Panel — Upload Jewelry</h2>
-      <p className="subtitle">Upload jewelry images (JPG, PNG, JPEG)</p>
+      <h1 className="title">Admin Panel</h1>
+      <p className="subtitle">Upload premium jewelry images</p>
+
 
       <div className="upload-section">
         <div className="input-wrapper">
