@@ -7,3 +7,7 @@ BACKEND:
 FRONTEND:
     npm install
     npm run dev
+
+
+
+USE THESE CODES
