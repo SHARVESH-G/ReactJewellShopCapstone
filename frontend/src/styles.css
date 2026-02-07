@@ -1,0 +1,217 @@
+/* =========================
+   Global Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #f9f9fb, #ececf2);
+    color: #1c1c1e;
+    min-height: 100vh;
+}
+
+/* =========================
+   Navbar (Luxury look)
+========================= */
+.navbar {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 28px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #555;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #d4af37; /* gold accent */
+}
+
+/* =========================
+   Container Card
+========================= */
+.container {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 50px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(14px);
+    border-radius: 28px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* =========================
+   Titles
+========================= */
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* =========================
+   Input wrapper
+========================= */
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 18px auto;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 18px 22px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background: #f2f2f7;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.25s;
+}
+
+input:focus {
+    background: white;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.3);
+}
+
+/* Floating label */
+.input-wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 16px;
+    font-size: 12px;
+    background: white;
+    padding: 0 6px;
+    color: #d4af37;
+}
+
+/* =========================
+   Buttons
+========================= */
+button {
+    padding: 14px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d4af37, #b8902c);
+    color: white;
+    transition: 0.25s;
+    box-shadow: 0 10px 20px rgba(212,175,55,0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(212,175,55,0.45);
+}
+
+/* =========================
+   Sections spacing
+========================= */
+.search-bar,
+.image-search,
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   Status
+========================= */
+.status {
+    margin: 25px 0;
+    color: #555;
+    font-weight: 500;
+}
+
+/* =========================
+   Results grid (showroom)
+========================= */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+/* Jewelry cards */
+.result-img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.result-img:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Upload Card
+========================= */
+.upload-section {
+    padding: 30px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
