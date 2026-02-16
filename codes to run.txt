@@ -1,13 +1,8 @@
 BACKEND:
     py -m install -r requirements.txt
-    python -m uvicorn main:app --reload --port 8000
-
+    python -m uvicorn main:app --reload --port 8000   ( or )   npm run dev
 
 
 FRONTEND:
     npm install
     npm run dev
-
-
-
-USE THESE CODES
